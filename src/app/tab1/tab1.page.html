@@ -6,6 +6,30 @@
       <ion-title size="large">Room Sensors</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-segment (ionChange)="segmentChanged($event)" value="temp" color="secondary"  [(ngModel)]="Type">
+    <ion-segment-button value="temp">
+      <ion-label>Temperature</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="hum">
+      <ion-label>Humidity</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+
+  <div [ngSwitch]="Type" class="center">
+    <div *ngSwitchCase="'temp'" class="center2">
+      <ion-label >
+        <ion-icon  name="thermometer-outline"></ion-icon>{{temp}}°
+      </ion-label>
+    </div>
+
+    <div *ngSwitchCase="'hum'" class="center2">
+    <ion-label>
+      <ion-icon name="stopwatch-outline"></ion-icon>{{hum}}%
+    </ion-label>
+  </div>
+  </div>
 
 
 </ion-content>

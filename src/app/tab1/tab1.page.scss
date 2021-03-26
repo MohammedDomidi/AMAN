@@ -1,0 +1,47 @@
+.center {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 160px;
+  font-size: 50px;
+  color: white;
+  border-radius: 60%;
+  background:#861F2B;
+  shape-outside: circle();
+  clip-path: circle();
+
+}
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+ion-icon{
+  color: white;
+  font-size: 65px;
+}
+
+ion-toggle {
+  --background: #808289;
+  --background-checked: #808289;
+
+  --handle-background: #861F2B;
+  --handle-background-checked: #808289;
+  width: 50px;
+  height: 25px;
+
+
+
+}
+
+
